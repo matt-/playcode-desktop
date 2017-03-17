@@ -56,12 +56,14 @@ function createMainWindow() {
         }
     })
 
+    // Enter fullscreen Playcode fullscreen method execution
     appView.on('enter-full-screen', () => {
-      appView.webContents.executeJavaScript("document.dispatchEvent( new Event('electronEnteredFullscreen') );")
+        appView.webContents.executeJavaScript('document.dispatchEvent( new Event("electronEnteredFullscreen") );')
     })
 
+    // Exit fullscreen Playcode fullscreen method execution
     appView.on('leave-full-screen', () => {
-      appView.webContents.executeJavaScript("document.dispatchEvent( new Event('electronLeavedFullscreen') );")
+        appView.webContents.executeJavaScript('document.dispatchEvent( new Event("electronLeavedFullscreen") );')
     })
 
     return appView
