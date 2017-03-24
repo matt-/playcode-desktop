@@ -11,7 +11,7 @@
 
 ## Screenshots
 
-[<img alt='Playcode' src="https://github.com/Meadowcottage/Playcode-desktop/blob/master/build/Screenshot.png?raw=true">](https://github.com/Meadowcottage/Playcode/releases)
+[<img alt='Playcode' src="https://github.com/Meadowcottage/Playcode-desktop/blob/master/build/Screenshot.png?raw=true">](https://github.com/Meadowcottage/Playcode-desktop/releases)
 
 ## Development
 
