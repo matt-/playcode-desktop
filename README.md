@@ -9,6 +9,10 @@
 </br>
 </br>
 
+## Downloads
+
+> Downloads for the Playcode desktop client can be found on the [releases](https://github.com/Meadowcottage/playcode-desktop/releases/latest) page.
+
 ## Screenshots
 
 [<img alt='Playcode' src="https://github.com/Meadowcottage/Playcode-desktop/blob/master/build/Screenshot.png?raw=true">](https://github.com/Meadowcottage/Playcode-desktop/releases)
