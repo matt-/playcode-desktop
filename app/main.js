@@ -5,7 +5,6 @@ const fs = require('fs')
 // Electron
 const electron = require('electron')
 
-const globalShortcut = electron.globalShortcut
 const menu = electron.Menu
 
 // App Info
@@ -103,20 +102,6 @@ app.on('ready', () => {
         appPage.on('new-window', (e, url) => {
             e.preventDefault()
             electron.shell.openExternal(url)
-        })
-
-        // Shortcut to reload the page.
-        globalShortcut.register('CmdOrCtrl+R', (item, focusedWindow) => {
-            if (focusedWindow) {
-                mainWindow.webContents.reload()
-            }
-        })
-        // Shortcut to go back a page.
-        globalShortcut.register('Command+Left', (item, focusedWindow) => {
-            if (focusedWindow && focusedWindow.webContents.canGoBack()) {
-                focusedWindow.webContents.goBack()
-                focusedWindow.webContents.reload()
-            }
         })
 
         // Navigate the window back when the user hits their mouse back button
