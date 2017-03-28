@@ -4,7 +4,7 @@ module.exports = new Config({
     defaults: {
         lastWindowState: {
             width: 1280,
-            height: 322
+            height: 720
         }
     }
 })
