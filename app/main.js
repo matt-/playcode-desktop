@@ -26,21 +26,21 @@ let isQuitting = false
 // Main Window
 function createMainWindow() {
     const lastWindowState = appConfig.get('lastWindowState')
+
     const appView = new electron.BrowserWindow({
         title: appTitle,
-        x: lastWindowState.x,
-        y: lastWindowState.y,
         width: lastWindowState.width,
         height: lastWindowState.height,
-        backgroundColor: '#2e2c29',
-        titleBarStyle: 'hidden-inset',
+
+        backgroundColor: '#2e2c29', // Background Color
+        titleBarStyle: 'hidden-inset', // Titlebar style (MacOS Only)
         // transparent: true,
         // frame: false,
-        center: true,
-        movable: true,
-        resizable: true,
-        fullscreenable: true,
-        autoHideMenuBar: true
+        center: true, // Center app window?
+        movable: true, // Is window movable?
+        resizable: true, // Is window resizable?
+        fullscreenable: true, // Is app fullscreenable?
+        autoHideMenuBar: true // Hide menubar in window on launch
     })
     appView.loadURL('https://playcode.io')
 
