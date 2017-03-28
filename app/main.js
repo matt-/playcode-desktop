@@ -32,6 +32,8 @@ function createMainWindow() {
         width: lastWindowState.width,
         height: lastWindowState.height,
 
+        minWidth: 438, // Window minimum width
+        minHeight: 395, // Window minimum height
         backgroundColor: '#2e2c29', // Background Color
         titleBarStyle: 'hidden-inset', // Titlebar style (MacOS Only)
         // transparent: true,
