@@ -41,7 +41,10 @@ function createMainWindow() {
         movable: true, // Is window movable?
         resizable: true, // Is window resizable?
         fullscreenable: true, // Is app fullscreenable?
-        autoHideMenuBar: true // Hide menubar in window on launch
+        autoHideMenuBar: true, // Hide menubar in window on launch
+        webPreferences: {
+            nodeIntegration: false
+        }
     })
     appView.loadURL('https://playcode.io')
 
